@@ -1,0 +1,2 @@
+# TIG_YM_derivation_architecture
+Theorem-oriented derivation architecture
