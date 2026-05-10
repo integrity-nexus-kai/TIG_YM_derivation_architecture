@@ -292,11 +292,17 @@ The TIG derivation program is currently:
 
 ---
 
-# Next Dependency Step
+# Next Consolidation Step
 
-The next derivation objective is:
+The current repository cleanup and dependency audit has been completed at the derivation-chain level.
 
-tig/derivation_chain/derivation_chain_readme_hardening.md
+The next objective is controlled transition from derivation-chain consolidation toward paper-level extraction.
+
+No further theorem-candidate expansion should occur before the current derivation chain has been converted into:
+
+- a canonical theorem map,
+- a paper-ready outline,
+- and a minimal list of unresolved proof gaps.
 
 ---
 
