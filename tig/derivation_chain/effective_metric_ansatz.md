@@ -61,7 +61,9 @@ The geometric sector is considered admissible only if it preserves:
 
 The current effective metric ansatz is structurally represented by:
 
-:contentReference[oaicite:0]{index=0}
+\[
+F(r)=1-\frac{2Mr^2}{r^3+r_c^3}
+\]
 
 with:
 
@@ -118,7 +120,9 @@ This compatibility currently remains structural and not theorematically complete
 
 The ansatz must remain compatible with the canonical structural equation:
 
-:contentReference[oaicite:1]{index=1}
+\[
+x^3-x^2+\beta^3=0
+\]
 
 with:
 
