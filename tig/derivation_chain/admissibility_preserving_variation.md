@@ -12,9 +12,9 @@ Last Updated: 2026-05-10
 
 # Purpose
 
-This document defines the minimal variational requirement for TIG-compatible dynamics.
+This document defines the minimal admissibility-preserving variational structure currently compatible with the TIG framework.
 
-Its purpose is not to introduce a complete action principle, but to specify how admissible geometric variations must preserve the canonical TIG structure.
+Its purpose is not to derive a complete gravitational action, but to provide a structurally admissible variational candidate capable of supporting the effective TIG geometry.
 
 ---
 
@@ -25,19 +25,20 @@ Derivation Chain
 
 Dependency Level:
 depends on:
+- field_equation_candidate.md
 - effective_metric_ansatz.md
-- field_equation_requirements.md
-- minimal_dynamical_generator.md
+- asymptotic_consistency_conditions.md
+- regularity_conditions.md
 - canonical_admissibility_axioms.md
 
 Rigorous Status:
 Theorem candidate
 
 Allowed Scope:
-admissibility-preserving structural variation
+minimal admissibility-compatible variational structure
 
 Forbidden Expansion:
-complete action principle, quantum gravity claims, Yang–Mills completion
+complete quantum gravity, Yang–Mills completion, operator closure claims
 
 ---
 
@@ -46,129 +47,158 @@ complete action principle, quantum gravity claims, Yang–Mills completion
 Within TIG:
 
 \[
-\text{allowed variations must preserve admissibility}
+\text{variation must preserve admissibility structure}
 \]
 
-A geometric variation is admissible only if it preserves the canonical primitive structure, critical compatibility, and asymptotic boundedness.
+A variational sector is considered admissible only if it preserves:
 
----
-
-# Variation Object
-
-Let:
-
-\[
-g_{\mu\nu} \rightarrow g_{\mu\nu} + \delta g_{\mu\nu}
-\]
-
-denote an effective geometric variation.
-
-This variation is admissible only if it preserves:
-
-- structural horizon compatibility,
-- branch admissibility,
 - asymptotic boundedness,
-- and discriminant-controlled critical behavior.
+- regularity compatibility,
+- critical branch structure,
+- and discriminant-compatible evolution.
 
 ---
 
-# Admissibility Preservation Requirement
+# Minimal Variational Candidate
 
-An admissibility-preserving variation must not generate:
-
-- uncontrolled curvature divergence,
-- branch incompatibility,
-- asymptotic instability,
-- or hidden primitive structures.
-
----
-
-# Effective Metric Compatibility
-
-The variation must remain compatible with the effective metric ansatz:
+The current minimal admissibility-compatible action candidate is structurally represented by:
 
 \[
-F(r)=1-\frac{2Mr^2}{r^3+r_c^3}
+S_{\mathrm{TIG}}
+=
+\int d^4x\,\sqrt{-g}
+\left(
+R
++
+\alpha\,\mathcal{L}_{\mathrm{corr}}
++
+\mathcal{L}_{\mathrm{eff}}
+\right)
 \]
 
-and with the associated structural horizon equation:
+where:
 
-\[
-x^3-x^2+\beta^3=0.
-\]
-
----
-
-# Critical Compatibility
-
-Allowed variations must preserve the critical discriminant structure:
-
-\[
-\Delta=\beta^3(4-27\beta^3)
-\]
-
-as the canonical branch-degeneracy control.
-
-Variations that erase or bypass the critical structure are non-admissible.
-
----
-
-# Asymptotic Compatibility
-
-Allowed variations must preserve Schwarzschild-compatible asymptotic behavior in the large-radius regime.
-
-No variation may introduce uncontrolled asymptotic growth.
+- \(R\) denotes the Ricci scalar,
+- \(\mathcal{L}_{\mathrm{corr}}\) denotes a higher-order admissibility-compatible correction sector,
+- and \(\mathcal{L}_{\mathrm{eff}}\) denotes an effective regularized structural sector.
 
 ---
 
 # Structural Interpretation
 
-At the current stage, admissibility-preserving variation is a structural requirement.
+The action candidate currently serves only as:
 
-It does NOT yet constitute:
+- a variational carrier,
+- an admissibility-preserving structural generator,
+- and a possible origin of the effective TIG field structure.
 
-- a complete variational principle,
-- a rigorous Euler-Lagrange derivation,
-- or a fully covariant field equation.
+It does NOT currently imply:
+
+- rigorous covariance completion,
+- renormalizability,
+- quantum consistency,
+- or uniqueness.
+
+---
+
+# Effective Geometry Compatibility
+
+The variational structure must remain compatible with the effective metric ansatz:
+
+\[
+F(r)=1-\frac{2Mr^2}{r^3+r_c^3}
+\]
+
+and must preserve:
+
+- admissible branch structure,
+- asymptotic Schwarzschild compatibility,
+- and critical discriminant behavior.
+
+---
+
+# Horizon Compatibility
+
+The variational structure must remain compatible with the canonical horizon equation:
+
+\[
+x^3-x^2+\beta^3=0
+\]
+
+with:
+
+\[
+x:=\frac{r_H}{2M}
+\]
+
+and:
+
+\[
+\beta:=\frac{r_c}{2M}.
+\]
+
+---
+
+# Admissibility Requirement
+
+The variational structure is admissible only if:
+
+- no uncontrolled singular sector appears,
+- asymptotic boundedness remains preserved,
+- regularity structure remains stable,
+- and admissible branch continuity is not destroyed.
 
 ---
 
 # Minimality Constraint
 
-Variations must remain:
+The action candidate must remain:
 
-- structurally minimal,
-- dependency-compatible,
+- geometrically minimal,
+- structurally conservative,
 - asymptotically controlled,
-- and governance-compatible.
+- and dependency-compatible.
 
-Unnecessary dynamical degrees of freedom are forbidden.
+Unnecessary variational complexity is prohibited.
+
+---
+
+# Forbidden Escalation
+
+The following are currently forbidden:
+
+- presenting the action candidate as fully derived,
+- claiming rigorous quantum completion,
+- claiming Yang–Mills equivalence,
+- or claiming full variational closure.
 
 ---
 
 # Weakest Step
 
-The weakest current step is the absence of a rigorous action functional whose variation produces the TIG structure.
+The weakest current step is:
 
-This document only defines the admissibility requirements such a variation must satisfy.
+- the absence of rigorous derivation of the correction sector,
+- the absence of operator completeness,
+- and the absence of asymptotic closure proofs.
 
 ---
 
 # Current Status
 
-TIG currently has:
+The current TIG framework provides:
 
-- an effective metric ansatz,
-- field-equation requirements,
-- primitive structural objects,
-- and admissibility axioms.
+- admissibility-compatible effective geometry,
+- critical branch structure,
+- minimal dynamical candidates,
+- and a minimal admissibility-preserving variational structure.
 
-It does NOT yet have:
+It does NOT yet provide:
 
-- a complete action principle,
-- rigorous variational closure,
+- rigorous field-equation derivation,
 - full covariance proof,
-- or Yang–Mills equivalence.
+- operator completeness,
+- or Yang–Mills completion.
 
 ---
 
@@ -176,7 +206,7 @@ It does NOT yet have:
 
 The next derivation objective is:
 
-tig/derivation_chain/effective_horizon_equation.md
+tig/derivation_chain/variational_consistency_conditions.md
 
 ---
 
