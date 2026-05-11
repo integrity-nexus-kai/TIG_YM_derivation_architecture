@@ -1,472 +1,489 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 
-\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[
+  a4paper,
+  left=2.25cm,
+  right=2.25cm,
+  top=2.45cm,
+  bottom=2.65cm
+]{geometry}
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-
-\usepackage{graphicx}
-\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage{microtype}
-\usepackage{hyperref}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{bm}
+\usepackage{caption}
+\usepackage{titlesec}
+
+\usepackage[numbers,sort&compress]{natbib}
+
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+]{hyperref}
+
+\graphicspath{{./}{../}}
 
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    urlcolor=blue
+  pdftitle={TIG2: Exact Cubic Branch Structure of Structural Horizon Formation},
+  pdfauthor={Kai Stefan Dietrich},
+  pdfsubject={Topological Integrity Gravity},
+  pdfkeywords={general relativity, black holes, horizons, cubic normal form, structural gravity, criticality}
 }
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.42em}
+\linespread{1.08}
 \raggedbottom
+\sloppy
 
-\title{
-Topological Integrity Gravity:\\
-Geometric Reconstruction and Critical Structure of the Horizon Sector
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}
+  {0.8em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}
+  {4.2ex plus 1.2ex minus 0.4ex}
+  {1.8ex plus 0.4ex minus 0.1ex}
+
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  width=0.92\textwidth
 }
+
+\setlength{\bibsep}{0.25em}
+
+\title{\bfseries TIG2: Exact Cubic Branch Structure of Structural Horizon Formation}
 
 \author{
 Kai Stefan Dietrich\\
-Independent Researcher
+Independent Researcher\\
+Topological Integrity Gravity Framework
 }
 
-\date{2026}
+\date{May 11, 2026}
 
 \begin{document}
 
 \maketitle
+\vspace{-1.0em}
 
-\begin{abstract}
+\begin{center}
+\begin{minipage}{0.88\textwidth}
+\begin{center}
+\textbf{Abstract}
+\end{center}
 
-We investigate a structurally constrained effective geometric sector exhibiting regular central behavior, Schwarzschild asymptotics, and admissible horizon interpolation.
-
-Under static spherical symmetry, the horizon condition reduces to the cubic relation
-
+Topological Integrity Gravity (TIG) formulates horizon formation as a structural consistency problem rather than merely as a coordinate-dependent feature of a specific metric representation. In this work, we isolate and analyze the exact cubic branch structure associated with the minimal TIG horizon normal form. The central equation is
 \[
 x^3-x^2+\beta^3=0,
 \]
-
-where
-
-\[
-x=\frac{r_H}{2M},
-\qquad
-\beta=\frac{r_c}{2M}.
-\]
-
-The resulting branch structure contains two admissible horizon branches separated by a critical merger point
-
+where \(x\) denotes the dimensionless horizon radius and \(\beta\) is a dimensionless structural deformation parameter. We show that the branch structure contains a critical degeneracy at
 \[
 x_c=\frac{2}{3},
 \qquad
-\beta_c=\left(\frac{4}{27}\right)^{1/3}.
+\beta_c=\left(\frac{4}{27}\right)^{1/3},
 \]
+where two real branches coalesce in a saddle-node transition. The Schwarzschild limit is recovered for \(\beta\to0\), while the critical point defines a structurally distinguished boundary for admissible horizon formation. The result provides a compact and mathematically exact formulation of the TIG2 cubic branch sector and prepares the ground for further analyses of photon spheres, echo delays, and near-critical observables.
+\end{minipage}
+\end{center}
 
-The effective sector exhibits universal saddle-node scaling, modified photon-sphere structure, and finite curvature invariants.
+\vspace{0.5em}
 
-The present work is deliberately restricted to the geometric reconstruction and consistency analysis of the TIG horizon sector within the stated effective framework.
-
-\end{abstract}
-
-% ============================================================
 \section{Introduction}
 
-General Relativity successfully describes gravitational dynamics across a broad observational regime \cite{einstein1915, schwarzschild1916, wald1984, carroll2004}. Nevertheless, classical black-hole geometries contain singular structures where curvature invariants diverge and geometric predictability breaks down \cite{hawkingellis1973, penrose1965}.
+Classical general relativity describes gravitational dynamics through the geometry of spacetime and the Einstein field equations \cite{einstein1915,wald1984,carroll2004}. In black-hole physics, horizons are usually treated as geometric or causal structures associated with exact or approximate spacetime solutions \cite{hawkingellis1973,wald1984}.
 
-Regularized black-hole constructions attempt to preserve asymptotic Schwarzschild behavior while modifying the deep interior geometry through effective structural scales or regularized sectors \cite{bardeen1968, dymnikova1992, ayonbeato1998, hayward2006}.
+In the Schwarzschild limit, the horizon radius is located at
+\[
+r_H=2M.
+\]
+Using the dimensionless normalization
+\[
+x:=\frac{r_H}{2M},
+\]
+the Schwarzschild branch corresponds to
+\[
+x=1.
+\]
 
-Topological Integrity Gravity (TIG) introduced a structurally constrained horizon sector governed by the cubic relation
+Topological Integrity Gravity (TIG) modifies the conceptual starting point. Instead of treating horizon formation only as a derived geometric surface, TIG interprets admissible horizon formation as a structural consistency condition. The present paper builds on the baseline TIG formulation \cite{dietrich2026tig} and isolates the exact cubic branch structure of the second TIG sector.
 
+The purpose of this paper is deliberately narrow. We do not propose a full replacement of the Einstein field equations. Rather, we isolate the minimal algebraic normal form governing the TIG2 structural horizon branch and analyze its exact critical geometry. The structural horizon equation considered here is
+\begin{equation}
+x^3-x^2+\beta^3=0.
+\label{eq:cubic}
+\end{equation}
+Here \(x\) denotes the dimensionless horizon radius, while \(\beta\) denotes a dimensionless structural deformation parameter. The parameter \(\beta\) is not interpreted as an additional spatial dimension. It acts as a structural control parameter measuring deformation away from the Schwarzschild branch.
+
+Equation~\eqref{eq:cubic} has three central properties. First, the Schwarzschild branch is recovered exactly for \(\beta=0\). Second, the cubic contains a finite critical branch point. Third, its discriminant yields an exact criterion for branch coalescence.
+
+\section{Structural Horizon Equation}
+
+The TIG2 structural horizon equation is
+\begin{equation}
+x^3-x^2+\beta^3=0.
+\label{eq:maincubic}
+\end{equation}
+For \(\beta=0\), the equation reduces to
+\[
+x^3-x^2=x^2(x-1)=0.
+\]
+Thus the nontrivial Schwarzschild-connected branch is
+\[
+x=1.
+\]
+
+The double root at \(x=0\) is interpreted as a degenerate base structure rather than as a macroscopic horizon. The deformation term \(+\beta^3\) minimally unfolds the degenerate polynomial
+\[
+P_0(x)=x^2(x-1).
+\]
+This form is useful because it preserves the Schwarzschild limit while introducing a single structural control parameter.
+
+Related questions about horizon regularity, singularity avoidance, and modified high-curvature behavior have appeared in several different contexts, including singularity theorems, regular black-hole models, and higher-curvature gravity \cite{penrose1965,bardeen1968,starobinsky1980,dymnikova1992,hayward2006}.
+
+\section{Critical Point}
+
+The critical point occurs when the cubic possesses a repeated root. This requires
+\[
+P(x;\beta)=0
+\]
+and
+\[
+\frac{\partial P}{\partial x}=0.
+\]
+From
+\[
+P(x;\beta)=x^3-x^2+\beta^3,
+\]
+we obtain
+\[
+\frac{\partial P}{\partial x}=3x^2-2x.
+\]
+Therefore
+\[
+3x^2-2x=0,
+\]
+or
+\[
+x(3x-2)=0.
+\]
+The nontrivial critical branch occurs at
+\[
+x_c=\frac{2}{3}.
+\]
+
+Substitution into the cubic yields
+\[
+\left(\frac{2}{3}\right)^3
+-
+\left(\frac{2}{3}\right)^2
++
+\beta_c^3
+=0.
+\]
+Hence
+\[
+\frac{8}{27}
+-
+\frac{12}{27}
++
+\beta_c^3
+=0,
+\]
+which gives
+\[
+\beta_c^3=\frac{4}{27}.
+\]
+Therefore,
+\begin{equation}
+x_c=\frac{2}{3},
+\qquad
+\beta_c=\left(\frac{4}{27}\right)^{1/3}.
+\label{eq:critical}
+\end{equation}
+This point corresponds to the exact saddle-node coalescence of two real cubic branches.
+
+\section{Discriminant Structure}
+
+For a cubic polynomial
+\[
+ax^3+bx^2+cx+d=0,
+\]
+the discriminant is
+\[
+\Delta
+=
+b^2c^2
+-
+4ac^3
+-
+4b^3d
+-
+27a^2d^2
++
+18abcd.
+\]
+For the TIG2 cubic
 \[
 x^3-x^2+\beta^3=0,
 \]
-
-where
-
+the coefficients are
 \[
-x=\frac{r_H}{2M},
+a=1,
 \qquad
-\beta=\frac{r_c}{2M}.
-\]
-
-The purpose of the present work is not to establish a complete covariant theory of gravity. Instead, the goal is the geometric reconstruction and consistency analysis of the TIG horizon sector under a minimal set of admissibility assumptions.
-
-The analysis is restricted to:
-
-\begin{itemize}
-    \item static spherical symmetry,
-    \item Schwarzschild asymptotics,
-    \item regular central behavior,
-    \item one intrinsic correction scale,
-    \item admissible horizon interpolation.
-\end{itemize}
-
-Within this framework, the horizon condition reduces to a universal cubic relation whose branch structure determines the admissible horizon sector of the geometry.
-
-The present work therefore focuses on:
-\begin{itemize}
-    \item geometric reconstruction of the cubic sector,
-    \item admissible branch structure,
-    \item critical horizon geometry,
-    \item photon-sphere behavior,
-    \item curvature regularity of the effective sector.
-\end{itemize}
-
-% ============================================================
-\section{Effective Geometric Sector}
-
-We consider the static spherically symmetric metric
-
-\[
-ds^2
-=
--F(r)\,dt^2
-+
-\frac{dr^2}{F(r)}
-+
-r^2d\Omega^2.
-\]
-
-The effective lapse function is defined by
-
-\[
-F(r)
-=
-1
--
-\frac{2M r^2}{r^3+r_c^3},
-\]
-
-where:
-\begin{itemize}
-    \item \(M\) denotes the asymptotic mass parameter,
-    \item \(r_c\) defines the intrinsic correction scale.
-\end{itemize}
-
-The effective geometric sector satisfies:
-\begin{itemize}
-    \item Schwarzschild asymptotics,
-    \item regular central structure,
-    \item admissible horizon interpolation.
-\end{itemize}
-
-For large radius,
-
-\[
-r\gg r_c,
-\]
-
-the lapse approaches
-
-\[
-F(r)
-\rightarrow
-1-\frac{2M}{r},
-\]
-
-recovering the Schwarzschild limit.
-
-For small radius,
-
-\[
-r\rightarrow0,
-\]
-
-the lapse behaves as
-
-\[
-F(r)
-\approx
-1
--
-\frac{2M}{r_c^3}r^2,
-\]
-
-corresponding to an effective de Sitter-type near-core structure.
-
-The resulting geometry therefore interpolates continuously between:
-\begin{itemize}
-    \item asymptotic Schwarzschild geometry,
-    \item a regularized near-core sector.
-\end{itemize}
-
-The present work does not claim uniqueness of the effective geometric sector. The role of the effective geometry is restricted to the reconstruction of the TIG horizon structure.
-
-% ============================================================
-\section{Horizon Reduction}
-
-Horizons are determined by
-
-\[
-F(r_H)=0.
-\]
-
-Substituting the effective lapse function gives
-
-\[
-1
--
-\frac{2M r_H^2}{r_H^3+r_c^3}
-=
-0.
-\]
-
-Rearranging yields
-
-\[
-r_H^3+r_c^3-2Mr_H^2=0.
-\]
-
-Introducing the dimensionless variables
-
-\[
-x=\frac{r_H}{2M},
+b=-1,
 \qquad
-\beta=\frac{r_c}{2M},
+c=0,
+\qquad
+d=\beta^3.
 \]
-
-the horizon equation reduces to
-
+The discriminant therefore becomes
 \[
-x^3-x^2+\beta^3=0.
+\Delta
+=
+4\beta^3
+-
+27\beta^6.
 \]
+Equivalently,
+\begin{equation}
+\Delta=\beta^3(4-27\beta^3).
+\label{eq:discriminant}
+\end{equation}
 
-The cubic therefore follows directly from:
+The branch classification follows immediately:
 \begin{itemize}
-    \item static spherical symmetry,
-    \item Schwarzschild asymptotics,
-    \item regular central structure,
-    \item one intrinsic correction scale,
-    \item admissible horizon interpolation.
+\item for \(0<\beta^3<4/27\), one has \(\Delta>0\), corresponding to three distinct real roots;
+\item for \(\beta^3=4/27\), one has \(\Delta=0\), corresponding to branch coalescence;
+\item for \(\beta^3>4/27\), one has \(\Delta<0\), leaving only one real branch.
 \end{itemize}
+The Schwarzschild-connected positive branch terminates precisely at the critical point.
 
-This establishes the geometric reconstruction of the TIG horizon sector within the effective framework.
+\section{Branch Geometry}
 
-% ============================================================
-\section{Critical Branch Structure}
+The cubic equation may also be written as
+\begin{equation}
+x^2(1-x)=\beta^3.
+\label{eq:branchgeometry}
+\end{equation}
+For positive \(\beta\), the right-hand side is positive, implying
+\[
+x^2(1-x)>0.
+\]
+For positive \(x\), this requires
+\[
+0<x<1.
+\]
+Thus the Schwarzschild branch begins at \(x=1\) for \(\beta=0\) and moves inward as the structural deformation parameter increases.
 
 Define
-
 \[
-P(x,\beta)=x^3-x^2+\beta^3.
+f(x)=x^2(1-x).
 \]
-
-The discriminant is
-
+Its derivative is
 \[
-\Delta(\beta)
-=
-\beta^3(4-27\beta^3).
+f'(x)=2x-3x^2=x(2-3x).
 \]
-
-The critical point satisfies
-
+The positive maximum occurs at
 \[
-P(x_c,\beta_c)=0,
-\qquad
-\partial_xP(x_c,\beta_c)=0.
+x=\frac{2}{3},
 \]
+where
+\[
+f\left(\frac{2}{3}\right)=\frac{4}{27}.
+\]
+This reproduces the exact critical value
+\[
+\beta_c^3=\frac{4}{27}.
+\]
+The critical point therefore has a direct geometric interpretation: it corresponds to the maximum structural capacity of the admissible branch geometry.
 
-This yields
+\section{Exact Cubic Branch Structure}
 
+Figure~\ref{fig:cubicbranch} illustrates the exact cubic branch structure associated with the TIG2 horizon equation.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{tig_cubic_branch_structure_exact.png}
+\caption{
+Exact cubic branch structure of the TIG2 structural horizon equation \(x^3-x^2+\beta^3=0\). The Schwarzschild branch begins at \(x=1\) for \(\beta=0\) and terminates at the critical saddle-node point
 \[
 x_c=\frac{2}{3},
 \qquad
 \beta_c=\left(\frac{4}{27}\right)^{1/3}.
 \]
-
-The admissible branch structure therefore contains:
-\begin{itemize}
-    \item an outer Schwarzschild-connected branch,
-    \item an inner admissible branch,
-    \item a degenerate critical merger point,
-    \item a horizonless supercritical sector.
-\end{itemize}
-
-The critical point corresponds to a saddle-node branch merger.
-
-Near the critical regime, the branch separation obeys
-
-\[
-x_\pm-x_c
-\sim
-(\beta_c-\beta)^{1/2},
-\]
-
-demonstrating universal square-root scaling behavior.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.84\textwidth]{tig_cubic_branch_structure_exact.png}
-\caption{
-Global admissible branch structure of the TIG horizon cubic
-\(
-x^3-x^2+\beta^3=0
-\).
-The Schwarzschild-connected outer branch and the inner admissible branch merge at the critical point
-\(
-x_c=2/3
-\),
-\(
-\beta_c=(4/27)^{1/3}
-\),
-beyond which no admissible positive horizon roots exist.
 }
-\label{fig:tig_branch_structure}
+\label{fig:cubicbranch}
 \end{figure}
 
-The critical merger defines the transition boundary between admissible horizon geometries and horizonless configurations. The resulting structure therefore acts as the geometric organizing principle of the admissible horizon sector.
+\section{Near-Critical Expansion}
 
-% ============================================================
-\section{Photon Sphere Structure}
-
-Null geodesic trajectories are governed by the effective potential
-
+To study the local structure near the critical point, define
 \[
-V_{\mathrm{eff}}(r)
+x=x_c+\epsilon,
+\qquad
+\beta^3=\beta_c^3-\delta,
+\]
+with
+\[
+x_c=\frac{2}{3},
+\qquad
+\beta_c^3=\frac{4}{27}.
+\]
+Expanding
+\[
+P(x;\beta)=x^3-x^2+\beta^3
+\]
+around the critical point yields
+\[
+P
 =
-\frac{L^2}{r^2}F(r).
-\]
-
-Circular null geodesics satisfy
-
-\[
-rF'(r)-2F(r)=0.
-\]
-
-For Schwarzschild geometry, this reproduces
-
-\[
-r_{\mathrm{ph}}=3M.
-\]
-
-Within the TIG effective sector, the modified lapse structure induces corrections to the photon-sphere geometry near the critical regime
-
-\[
-\beta\sim\beta_c.
-\]
-
-The photon sphere therefore remains continuously connected to the admissible horizon sector.
-
-The leading TIG correction shifts the photon sphere inward relative to the Schwarzschild geometry. In the asymptotic regime, the correction remains perturbatively small, while near criticality the deviation increases continuously.
-
-The photon-sphere structure therefore provides one of the primary geometric observables associated with the TIG horizon sector.
-
-% ============================================================
-\section{Curvature Invariants}
-
-The effective geometric sector remains curvature-regular near the central region.
-
-Near the origin,
-
-\[
-F(r)
-\approx
-1
+\epsilon^2
++
+\epsilon^3
 -
-\frac{2M}{r_c^3}r^2,
+\delta.
 \]
-
-which corresponds to an effective de Sitter-type structure.
-
-The Ricci scalar therefore remains finite:
-
+To leading order,
 \[
-R
-\rightarrow
-\frac{24M}{r_c^3}.
+\epsilon^2\simeq\delta.
 \]
+Therefore,
+\begin{equation}
+\epsilon\simeq\pm\sqrt{\delta}.
+\label{eq:sqrtscaling}
+\end{equation}
+The TIG2 branch splitting thus obeys universal saddle-node square-root scaling.
 
-The quadratic Ricci invariant remains finite:
+\section{Physical Interpretation}
 
+The TIG2 cubic sector does not claim to represent a complete covariant gravitational theory. Its role is structural. The physical interpretation is intentionally conservative:
+\begin{enumerate}
+\item the Schwarzschild limit is exactly recovered;
+\item the parameter \(\beta\) introduces a controlled structural deformation;
+\item a finite critical point emerges naturally;
+\item the branch termination is mathematically exact;
+\item near-critical behavior follows universal saddle-node scaling.
+\end{enumerate}
+
+The cubic sector therefore defines a mathematically rigorous structural core from which more detailed metric and observational sectors may later be derived. This interpretation is compatible with the broader lesson from classical relativity: exact solutions, causal horizons, and singularity formation must be treated with care, especially in regimes where extrapolation beyond established curvature scales becomes physically delicate \cite{hawkingellis1973,penrose1965,wald1984}.
+
+
+\section{Why a Cubic?}
+
+The cubic structure is not chosen arbitrarily. It represents the minimal nonlinear algebraic sector capable of generating a finite branch coalescence with a nontrivial discriminant structure.
+
+A quadratic deformation does not produce a finite saddle-node branch transition with a structurally distinguished critical point. By contrast, the cubic equation naturally generates:
+\begin{itemize}
+\item exact branch splitting,
+\item finite discriminant collapse,
+\item critical branch coalescence,
+\item universal near-critical scaling.
+\end{itemize}
+
+The TIG2 cubic horizon equation therefore represents the minimal algebraic normal form capable of supporting a structurally nontrivial horizon transition sector.
+
+This places the TIG2 structure in close conceptual relation to catastrophe theory and nonlinear bifurcation systems, where cubic normal forms frequently govern universal transition behavior.
+
+\section{Universality of the Critical Scaling}
+
+The near-critical expansion produces the local scaling relation
 \[
-R_{\mu\nu}R^{\mu\nu}
-=
-\frac{144M^2}{r_c^6}.
+\epsilon \sim \sqrt{\delta}.
 \]
 
-The Kretschmann scalar also remains finite:
+This square-root behavior is not tied to a particular metric ansatz or microscopic realization. Instead, it follows universally from the local catastrophe structure of the cubic horizon sector itself.
 
+The resulting scaling law therefore reflects a structural property of the branch geometry rather than a model-dependent dynamical assumption.
+
+In this sense, the critical TIG2 branch structure behaves analogously to universal saddle-node transitions encountered throughout nonlinear systems and bifurcation theory.
+
+\section{Observable Outlook}
+
+The present paper intentionally isolates only the structural cubic sector. Nevertheless, the resulting branch geometry suggests several potentially observable near-critical consequences.
+
+These include:
+\begin{itemize}
+\item modified photon-sphere radii,
+\item altered effective near-horizon potentials,
+\item near-critical echo-delay amplification,
+\item branch-sensitive shadow deviations,
+\item critical deformation signatures in high-curvature regimes.
+\end{itemize}
+
+The purpose of the present work is not to derive these observables in full detail, but rather to establish the mathematically exact structural core from which such analyses may consistently proceed.
+
+\section{Relation to General Relativity}
+
+General relativity is recovered in the limit
 \[
-K
-=
-\frac{96M^2}{r_c^6}.
+\beta\to0.
 \]
+In this limit,
+\[
+x\to1,
+\]
+which corresponds to
+\[
+r_H\to2M.
+\]
+The TIG2 cubic sector should therefore not be interpreted as a contradiction of general relativity. Instead, it provides an additional structural criterion that becomes relevant near critical branch configurations.
 
-For large radius, the geometry approaches the Schwarzschild curvature sector.
+This places TIG2 closer in spirit to structural or effective high-curvature analyses than to a direct replacement of classical general relativity. The comparison class includes higher-curvature modifications such as the \(R^2\) model of Starobinsky \cite{starobinsky1980}, regular black-hole constructions \cite{bardeen1968,dymnikova1992,hayward2006}, and standard geometric formulations of relativity \cite{wald1984,carroll2004}.
 
-The effective geometry therefore preserves:
+\section{Limitations}
+
+The present work is intentionally limited in scope. Specifically, the paper does not:
 \begin{itemize}
-    \item asymptotic Schwarzschild behavior,
-    \item finite curvature invariants,
-    \item regular central structure.
+\item derive a full covariant action principle;
+\item propose a complete modified Einstein equation;
+\item derive observational constraints;
+\item interpret \(\beta\) as a spatial coordinate;
+\item claim that the cubic sector alone determines all black-hole observables.
 \end{itemize}
 
-The present work restricts itself to the geometric consistency of this regularized sector and does not establish complete nonlinear tensor closure.
+The purpose of TIG2 is instead to establish a mathematically exact structural core suitable for future extension.
 
-% ============================================================
-\section{Structural Interpretation}
-
-The TIG horizon cubic defines a constrained admissible horizon sector generated by:
-\begin{itemize}
-    \item asymptotic Schwarzschild consistency,
-    \item regularized near-core geometry,
-    \item one intrinsic structural scale,
-    \item continuity of the horizon transition.
-\end{itemize}
-
-The critical merger point represents the boundary between admissible horizon geometries and horizonless configurations.
-
-The resulting cubic structure is therefore interpreted not as an arbitrary algebraic artifact, but as the normal-form representation of the admissible horizon sector within the stated effective geometric framework.
-
-% ============================================================
-\section{Claim Boundary}
-
-The present work does not establish:
-\begin{itemize}
-    \item complete nonlinear vacuum closure,
-    \item full tensor consistency,
-    \item a final covariant action,
-    \item quantization,
-    \item a complete replacement theory for General Relativity.
-\end{itemize}
-
-The scope of the paper is deliberately restricted to:
-\begin{itemize}
-    \item geometric reconstruction,
-    \item horizon-sector consistency,
-    \item critical branch structure,
-    \item photon-sphere corrections,
-    \item curvature regularity of the effective sector.
-\end{itemize}
-
-These unresolved problems define the next stages of the TIG research program.
-
-% ============================================================
 \section{Conclusion}
 
-Under static spherical symmetry, Schwarzschild asymptotics, regular central structure, one intrinsic correction scale, and admissible horizon interpolation, the TIG horizon sector reduces to the cubic relation
-
+We have analyzed the exact cubic branch structure associated with the TIG2 structural horizon equation
 \[
 x^3-x^2+\beta^3=0.
 \]
+The cubic reproduces the Schwarzschild limit exactly and contains a finite saddle-node critical point at
+\[
+x_c=\frac{2}{3},
+\qquad
+\beta_c=\left(\frac{4}{27}\right)^{1/3}.
+\]
+Its discriminant is
+\[
+\Delta=\beta^3(4-27\beta^3),
+\]
+which defines the precise branch transition structure.
 
-The resulting structure contains:
-\begin{itemize}
-    \item admissible horizon branches,
-    \item a degenerate critical horizon,
-    \item universal saddle-node scaling,
-    \item modified photon-sphere structure,
-    \item finite curvature invariants.
-\end{itemize}
+Near criticality, the branch splitting obeys square-root scaling, characteristic of universal saddle-node behavior. The result establishes a compact and mathematically transparent structural core for TIG2 and provides a stable basis for future analyses of effective geometries, photon-sphere deviations, echo structures, and observational near-critical signatures.
 
-This establishes the geometric reconstruction and consistency structure of the TIG horizon sector within the stated effective geometric framework.
+\section*{Acknowledgments}
 
-\clearpage
+The author acknowledges the broader Topological Integrity Gravity research program from which the present structural analysis emerged.
 
-\bibliographystyle{unsrt}
+\nocite{*}
+
+\bibliographystyle{unsrtnat}
+\begingroup
+\small
 \bibliography{references}
+\endgroup
 
 \end{document}
