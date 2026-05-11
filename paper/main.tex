@@ -1,0 +1,462 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\geometry{margin=2.5cm}
+
+\title{Geometric Reconstruction and Proof of the TIG Horizon Sector}
+\author{Kai Stefan Dietrich}
+\date{May 11, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Topological Integrity Gravity introduced a structurally constrained horizon sector governed by a cubic normal form. In this work, we provide a geometric reconstruction and proof of the TIG1 horizon sector within an effective static and spherically symmetric geometric framework.
+
+Under Schwarzschild asymptotics, regular central structure, one intrinsic correction scale, and admissible horizon transition, the horizon condition reduces to the TIG cubic structure.
+
+The resulting geometry contains:
+\begin{itemize}
+\item a Schwarzschild-connected outer branch,
+\item an inner admissible branch,
+\item a degenerate critical horizon,
+\item a horizonless supercritical sector.
+\end{itemize}
+
+The critical branch merger occurs at
+
+\[
+x_c=\frac{2}{3},
+\qquad
+\beta_c=\left(\frac{4}{27}\right)^{1/3},
+\]
+
+and exhibits universal saddle-node scaling behavior.
+
+In addition to the horizon structure, we derive the associated photon-sphere sector and analyze the curvature-invariant structure of the effective geometry.
+
+The present work does not claim complete nonlinear vacuum closure, full tensor consistency, or a final covariant action.
+
+These unresolved problems are deferred to TIG3.
+
+\end{abstract}
+
+\section{Introduction}
+
+Topological Integrity Gravity (TIG) introduced a structurally constrained horizon sector governed by the cubic relation
+
+\[
+x^3-x^2+\beta^3=0,
+\]
+
+where
+
+\[
+x=\frac{r_H}{2M},
+\qquad
+\beta=\frac{r_c}{2M}.
+\]
+
+The original TIG formulation established the existence of a critical horizon structure together with its phenomenological implications. However, the geometric assumptions underlying the cubic sector were not isolated within a fully explicit derivation framework.
+
+The purpose of the present work is to provide a geometric reconstruction and proof of the TIG1 horizon sector under a minimal set of admissibility assumptions.
+
+The analysis is restricted to:
+\begin{itemize}
+\item static spherical symmetry,
+\item Schwarzschild asymptotics,
+\item regular central structure,
+\item one intrinsic correction scale,
+\item admissible horizon transition.
+\end{itemize}
+
+Within this effective geometric sector, we show that the horizon condition reduces to the TIG cubic structure.
+
+The resulting geometry contains:
+\begin{itemize}
+\item a Schwarzschild-connected outer branch,
+\item an inner admissible branch,
+\item a degenerate critical horizon,
+\item a horizonless supercritical sector.
+\end{itemize}
+
+The branch merger occurs at the critical point
+
+\[
+x_c=\frac{2}{3},
+\qquad
+\beta_c=\left(\frac{4}{27}\right)^{1/3}.
+\]
+
+The resulting structure exhibits universal saddle-node scaling behavior.
+
+In addition to the horizon structure, we derive:
+\begin{itemize}
+\item the associated photon-sphere sector,
+\item the leading TIG correction to the Schwarzschild photon sphere,
+\item the curvature-invariant structure of the effective geometry.
+\end{itemize}
+
+The resulting effective sector remains curvature-regular while reproducing the Schwarzschild limit asymptotically.
+
+The scope of this paper is deliberately restricted.
+
+The present work does not claim:
+\begin{itemize}
+\item complete nonlinear vacuum closure,
+\item full tensor consistency,
+\item a final covariant action,
+\item quantization,
+\item a complete replacement theory for General Relativity.
+\end{itemize}
+
+These unresolved problems are deferred to the next programmatic layer, TIG3.
+
+The goal of TIG2 is therefore the geometric reconstruction and proof of the TIG1 horizon sector within the stated effective geometric framework.
+
+\section{Effective Geometric Sector}
+
+We consider a static and spherically symmetric effective geometry of the form
+
+\[
+ds^2
+=
+-F(r)dt^2
++
+\frac{dr^2}{F(r)}
++
+r^2d\Omega^2.
+\]
+
+The effective mass profile is defined as
+
+\[
+m(r)
+=
+M\frac{r^3}{r^3+r_c^3}.
+\]
+
+The corresponding lapse function becomes
+
+\[
+F(r)
+=
+1-\frac{2m(r)}{r}
+=
+1-\frac{2Mr^2}{r^3+r_c^3}.
+\]
+
+This effective sector satisfies:
+\begin{itemize}
+\item Schwarzschild asymptotics,
+\item regular central behavior,
+\item one intrinsic correction scale,
+\item admissible horizon interpolation.
+\end{itemize}
+
+For
+
+\[
+r\gg r_c,
+\]
+
+the lapse function approaches
+
+\[
+F(r)\rightarrow1-\frac{2M}{r},
+\]
+
+which reproduces the Schwarzschild limit.
+
+For
+
+\[
+r\rightarrow0,
+\]
+
+the lapse behaves as
+
+\[
+F(r)
+\approx
+1-\frac{2M}{r_c^3}r^2,
+\]
+
+which corresponds to an effective de Sitter-type near-core structure.
+
+The effective geometric sector therefore interpolates continuously between:
+\begin{itemize}
+\item asymptotic Schwarzschild geometry,
+\item and a regularized near-core region.
+\end{itemize}
+
+The present work does not claim uniqueness of the effective mass profile.
+
+The role of the effective geometry is restricted to the reconstruction and proof of the TIG horizon sector.
+
+\section{Horizon Reduction}
+
+Horizons are determined by
+
+\[
+F(r_H)=0.
+\]
+
+Substituting the TIG lapse function gives
+
+\[
+1-\frac{2Mr_H^2}{r_H^3+r_c^3}=0.
+\]
+
+Rearranging yields
+
+\[
+r_H^3+r_c^3-2Mr_H^2=0.
+\]
+
+Define the dimensionless variables
+
+\[
+x=\frac{r_H}{2M},
+\qquad
+\beta=\frac{r_c}{2M}.
+\]
+
+The horizon equation reduces to
+
+\[
+x^3-x^2+\beta^3=0.
+\]
+
+This is the TIG horizon cubic.
+
+The cubic therefore follows directly from:
+\begin{itemize}
+\item static spherical symmetry,
+\item Schwarzschild asymptotics,
+\item regular central behavior,
+\item one intrinsic correction scale,
+\item admissible horizon transition.
+\end{itemize}
+
+This establishes the geometric reconstruction of the TIG1 horizon sector within the effective geometric framework.
+
+\section{Critical Branch Structure}
+
+Define
+
+\[
+P(x,\beta)=x^3-x^2+\beta^3.
+\]
+
+The discriminant is
+
+\[
+\Delta(\beta)=\beta^3(4-27\beta^3).
+\]
+
+The critical point satisfies
+
+\[
+P(x_c,\beta_c)=0,
+\qquad
+\partial_xP(x_c,\beta_c)=0.
+\]
+
+This yields
+
+\[
+x_c=\frac{2}{3},
+\qquad
+\beta_c=\left(\frac{4}{27}\right)^{1/3}.
+\]
+
+The admissible branch structure is:
+\begin{itemize}
+\item two admissible positive branches for \(0<\beta<\beta_c\),
+\item one degenerate branch at \(\beta=\beta_c\),
+\item no admissible horizon branch for \(\beta>\beta_c\).
+\end{itemize}
+
+The critical point corresponds to a saddle-node branch merger.
+
+Near criticality, the branch separation obeys
+
+\[
+x_\pm-x_c
+\sim
+(\beta_c-\beta)^{1/2}.
+\]
+
+This establishes universal square-root scaling of the TIG horizon sector.
+
+\section{Photon Sphere Structure}
+
+The effective potential for null geodesics is
+
+\[
+V_{\mathrm{eff}}(r)
+=
+\frac{L^2}{r^2}F(r).
+\]
+
+Circular null geodesics satisfy
+
+\[
+rF'(r)-2F(r)=0.
+\]
+
+Substituting the TIG lapse function yields the photon-sphere equation
+
+\[
+r^6
+-
+3Mr^5
++
+2r^3r_c^3
++
+r_c^6
+=
+0.
+\]
+
+For
+
+\[
+r_c\rightarrow0,
+\]
+
+the Schwarzschild photon sphere
+
+\[
+r_{\mathrm{ph}}=3M
+\]
+
+is recovered continuously.
+
+The leading TIG correction shifts the photon sphere inward relative to Schwarzschild.
+
+The photon-sphere structure therefore remains geometrically connected to the TIG horizon sector.
+
+\section{Curvature Invariants}
+
+The effective geometry produces finite curvature invariants throughout the admissible sector.
+
+Near the center,
+
+\[
+F(r)
+\approx
+1-\frac{2M}{r_c^3}r^2,
+\]
+
+which corresponds to an effective de Sitter-type structure.
+
+The Ricci scalar remains finite:
+
+\[
+R
+\rightarrow
+\frac{24M}{r_c^3}.
+\]
+
+The quadratic Ricci invariant remains finite:
+
+\[
+R_{\mu\nu}R^{\mu\nu}
+=
+\frac{144M^2}{r_c^6}.
+\]
+
+The Kretschmann scalar also remains finite:
+
+\[
+K
+=
+\frac{96M^2}{r_c^6}.
+\]
+
+For large radius, the geometry approaches the Schwarzschild curvature sector.
+
+The effective geometry therefore preserves:
+\begin{itemize}
+\item asymptotic Schwarzschild behavior,
+\item finite curvature invariants,
+\item regular central structure.
+\end{itemize}
+
+\section{Structural Meaning}
+
+The TIG horizon sector defines a structurally constrained admissible geometry.
+
+The critical point corresponds to:
+\begin{itemize}
+\item branch merger,
+\item horizon degeneracy,
+\item onset of critical scaling,
+\item structural transition of the admissible horizon sector.
+\end{itemize}
+
+The resulting geometry is not interpreted as a complete gravitational replacement theory.
+
+The present work establishes only the effective geometric reconstruction of the TIG horizon structure.
+
+\section{Claim Boundary}
+
+The present work establishes:
+\begin{itemize}
+\item geometric reconstruction of the TIG horizon cubic,
+\item admissible branch structure,
+\item critical horizon merger,
+\item photon-sphere structure,
+\item curvature regularity of the effective geometric sector.
+\end{itemize}
+
+The present work does not establish:
+\begin{itemize}
+\item complete nonlinear vacuum closure,
+\item full tensor consistency,
+\item a final covariant action,
+\item uniqueness of the effective geometry,
+\item quantization,
+\item a complete replacement theory for General Relativity.
+\end{itemize}
+
+These unresolved problems define the TIG3 program.
+
+\section{Conclusion}
+
+Under static spherical symmetry, Schwarzschild asymptotics, regular central structure, one intrinsic correction scale, and admissible horizon transition, the TIG horizon sector reduces to the cubic relation
+
+\[
+x^3-x^2+\beta^3=0.
+\]
+
+The resulting geometry contains:
+\begin{itemize}
+\item admissible horizon branches,
+\item a degenerate critical horizon,
+\item universal saddle-node scaling,
+\item a modified photon-sphere sector,
+\item and finite curvature invariants.
+\end{itemize}
+
+This establishes the geometric reconstruction and proof of the TIG1 horizon sector within the stated effective geometric framework.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
