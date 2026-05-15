@@ -49,7 +49,24 @@ tig3-vacuum/
     vacuum_admissibility_conditions.md
   notes/
     open_questions.md
+  simulations/
+    README.md
+    tig3_horizon_dynamics_integrity_core.html
+    previews/
+      tig3_horizon_preview.png
 ```
+
+## Simulation Status
+
+The TIG3 simulations are heuristic structural visualization tools designed to explore:
+
+- near-critical horizon dynamics,
+- regularized core behavior,
+- bounded-curvature sectors,
+- dynamic relaxation modes,
+- and admissible vacuum geometries.
+
+These simulations are not yet rigorous numerical GR solutions and do not constitute formal proofs.
 
 ## Status
 
