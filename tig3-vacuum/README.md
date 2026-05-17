@@ -1,75 +1,297 @@
-# TIG3 Vacuum Sector
+# Canonical TIG3 README
 
 ## Purpose
 
-This directory defines the research architecture for TIG3, the vacuum-sector extension of the Topological Integrity Gravity program.
+This document defines the canonical scientific overview of the TIG3 vacuum-sector framework.
 
-TIG3 is not a speculative replacement theory of gravity. It is a conservative structural-consistency program built on the TIG2 cubic horizon branch sector.
+It serves as:
 
-TIG2 established the exact normal form
+- the primary repository entry point,
+- the canonical scientific summary,
+- and the publication-stable overview of the TIG3 program.
+
+This README is intentionally conservative and mathematically disciplined.
+
+---
+
+# TIG3 — Topological Integrity Gravity Vacuum Program
+
+## Core Scientific Position
+
+TIG3 develops a:
 
 ```text
-x^3 - x^2 + beta^3 = 0
+conditional operator-theoretic perturbative vacuum admissibility framework
 ```
 
-together with its critical point, discriminant structure, and saddle-node scaling. TIG3 asks what kind of vacuum geometry is admissible if that branch structure is to remain regular, stable, and compatible with the general-relativistic limit.
+for a representative bounded-curvature geometric sector compatible with the TIG2 branch structure.
 
-## Core TIG3 Question
+The framework studies:
 
-What conditions must a vacuum spacetime satisfy in order to carry the TIG2 structural horizon branch without producing singular, unstable, or non-admissible geometric continuations?
+- vacuum consistency,
+- bounded-curvature geometry,
+- perturbative admissibility,
+- spectral structure,
+- and operator-theoretic stability conditions.
 
-Equivalently:
+TIG3 is not currently presented as:
+
+- a complete theory of gravity,
+- a replacement for General Relativity,
+- or a quantum-gravity completion.
+
+---
+
+# Structural Foundation
+
+The TIG3 framework extends the TIG2 branch-structure program based on the cubic relation
 
 ```text
-TIG3 = admissible vacuum geometry for the TIG2 horizon branch sector.
+x^3 - x^2 + beta^3 = 0.
 ```
 
-## Research Discipline
+The critical branch structure is characterized by
 
-The TIG3 sector is constrained by the following rules:
+```text
+x_c = 2/3,
+beta_c^3 = 4/27.
+```
 
-1. Preserve the GR limit whenever possible.
-2. Treat beta as a structural control parameter, not as an additional spatial dimension.
-3. Separate proven statements, conjectures, interpretations, and observational outlooks.
-4. Do not introduce undefined dimensions, metaphysical claims, or unsupported quantum-gravity assertions.
-5. Require every structural claim to follow from explicit assumptions.
-6. Prefer minimal normal forms, discriminants, stability conditions, topology, and geometric analysis.
+This structure defines admissible horizon-sector transitions and near-critical geometric behavior.
 
-## Directory Map
+---
+
+# Representative Geometry
+
+The representative TIG3 vacuum-sector geometry is modeled by
+
+```text
+ds^2
+=
+-F(r)dt^2
++
+dr^2/F(r)
++
+r^2 dOmega^2,
+```
+
+with lapse function
+
+```text
+F(r)
+=
+1 - 2Mr^2/(r^3+r_c^3).
+```
+
+The geometry preserves Schwarzschild-compatible asymptotics while introducing a regulated high-curvature core structure.
+
+---
+
+# Current Mathematical Program
+
+The present TIG3 framework develops:
+
+```text
+bounded curvature
+→ perturbative reduction
+→ effective radial operator
+→ quadratic-form analysis
+→ self-adjoint realization
+→ spectral admissibility
+→ bounded linear evolution.
+```
+
+This creates a layered operator-theoretic perturbative framework.
+
+---
+
+# Perturbative Structure
+
+Metric perturbations are introduced via
+
+```text
+g_ab -> g_ab + h_ab,
+```
+
+with perturbative condition
+
+```text
+|h_ab| << 1.
+```
+
+The perturbative dynamics are modeled through a reduced radial operator framework.
+
+---
+
+# Effective Operator
+
+The formal radial operator is
+
+```text
+L_TIG
+=
+- d^2/dr_*^2
++
+V_eff(r).
+```
+
+The current candidate effective potential is
+
+```text
+V_eff(r)
+=
+F(r)
+[
+ell(ell+1)/r^2
++
+F'(r)/r
+].
+```
+
+The exact derivation remains partially open.
+
+---
+
+# Spectral Program
+
+The central spectral admissibility condition is
+
+```text
+sigma(L_TIG^F)
+subset
+[0,infinity).
+```
+
+Under this condition, exponentially growing linear perturbative modes are excluded.
+
+The spectral program remains conditional.
+
+---
+
+# Current Mathematical Status
+
+| Component | Status |
+|---|---|
+| TIG2 branch structure | established |
+| representative geometry | established |
+| bounded representative curvature | established |
+| perturbative reduction | established |
+| candidate effective operator | established |
+| self-adjoint realization | conditional |
+| spectral nonnegativity | open |
+| bounded linear evolution | conditional |
+| nonlinear stability | open |
+
+---
+
+# Near-Critical Sector
+
+Near
+
+```text
+beta approx beta_c,
+```
+
+the framework may develop:
+
+- elongated throat structures,
+- metastable perturbative modes,
+- spectral compression,
+- and slow relaxation phenomena.
+
+This regime remains under active analysis.
+
+---
+
+# Scientific Interpretation
+
+The TIG3 framework should currently be interpreted as:
+
+```text
+a structurally regulated perturbative vacuum-sector framework
+```
+
+rather than:
+
+- a final gravitational theory,
+- a complete singularity theorem,
+- or a quantum-gravity model.
+
+---
+
+# Explicit Non-Claims
+
+TIG3 does not currently establish:
+
+- complete nonlinear stability,
+- global causal regularity,
+- quantum gravity,
+- observational confirmation,
+- or a complete covariant field-equation system.
+
+These remain open or outside current scope.
+
+---
+
+# Repository Structure
+
+Recommended repository structure:
 
 ```text
 tig3-vacuum/
-  README.md
-  research_architecture.md
-  definitions/
-    admissible_tig_vacuum.md
-  proof_program/
-    tig3_proof_skeleton.md
-  constraints/
-    vacuum_admissibility_conditions.md
-  notes/
-    open_questions.md
-  simulations/
-    README.md
-    tig3_horizon_dynamics_integrity_core.html
-    previews/
-      tig3_horizon_preview.png
+├── README.md
+├── proof_program/
+├── publication_hardening/
+├── perturbation_framework/
+├── operator_analysis/
+├── figures/
+├── references/
+└── paper/
 ```
 
-## Simulation Status
+---
 
-The TIG3 simulations are heuristic structural visualization tools designed to explore:
+# Publication Position
 
-- near-critical horizon dynamics,
-- regularized core behavior,
-- bounded-curvature sectors,
-- dynamic relaxation modes,
-- and admissible vacuum geometries.
+The strongest mathematically justified current statement is:
 
-These simulations are not yet rigorous numerical GR solutions and do not constitute formal proofs.
+```text
+TIG3 provides a coherent conditional operator-theoretic perturbative admissibility framework for a representative bounded-curvature vacuum sector compatible with the TIG2 branch structure.
+```
 
-## Status
+---
 
-This directory establishes the TIG3 research boundary. It does not yet claim a complete covariant field equation, an observational model, or a final physical theory.
+# Scientific Style
 
-Its immediate purpose is to prevent conceptual drift while building a publication-oriented vacuum-sector framework.
+The TIG3 framework follows the style of:
+
+- mathematical physics,
+- operator theory,
+- geometric analysis,
+- nonlinear systems,
+- and perturbative spectral analysis.
+
+The framework prioritizes:
+
+- explicit assumptions,
+- theorem transparency,
+- conservative interpretation,
+- and publication stability.
+
+---
+
+# Final Interpretation
+
+TIG3 currently represents:
+
+```text
+a mathematically structured perturbative admissibility program
+```
+
+for bounded-curvature representative vacuum-sector geometries compatible with the TIG2 branch structure.
+
+---
+
+# Status
+
+This document establishes the canonical repository-level scientific overview for the TIG3 publication-hardening program.
