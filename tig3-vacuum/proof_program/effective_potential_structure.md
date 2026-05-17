@@ -294,8 +294,7 @@ The next required steps are:
 2. compute candidate spectra numerically,
 3. analyze near-critical resonance scaling,
 4. study spectral lower bounds,
-5. formulate admissibility inequalities,
-6. investigate possible operator-theoretic links to Yang-Mills-type spectral structure.
+5. formulate admissibility inequalities.
 
 ---
 
