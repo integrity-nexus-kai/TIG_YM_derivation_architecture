@@ -378,7 +378,6 @@ The TIG3 framework currently does not establish:
 - nonlinear stability,
 - quantum gravity completion,
 - information-paradox resolution,
-- Yang-Mills proof,
 - observational verification,
 - uniqueness of geometry,
 - or complete field equations.
