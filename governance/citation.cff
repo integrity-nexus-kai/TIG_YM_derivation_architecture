@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+
+title: "TIG3 Derivation Architecture"
+
+message: >
+  If you use this repository, please cite it using the metadata below.
+
+type: software
+
+authors:
+  - family-names: "Dietrich"
+    given-names: "Kai Stefan"
+    affiliation: "Independent Researcher"
+    orcid: ""
+    email: ""
+
+repository-code: "https://github.com/integrity-nexus-kai/TIG_YM_derivation_architecture"
+
+abstract: >
+  Governance-oriented operator-theoretic derivation architecture
+  for admissibility-preserving spectral analysis,
+  recursive operator stabilization,
+  and structured TIG3 vacuum-sector research.
+
+keywords:
+  - TIG3
+  - admissibility
+  - operator theory
+  - spectral analysis
+  - recursive stabilization
+  - mathematical physics
+  - vacuum structure
+  - governance architecture
+
+license: MIT
+
+version: "0.1.0"
+
+date-released: 2026-05-17
