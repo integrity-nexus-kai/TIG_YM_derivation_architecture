@@ -4,21 +4,6 @@ Theorem-oriented derivation architecture for the TIG3 operator-theoretic researc
 
 ---
 
-# Author
-
-Kai Stefan Dietrich
-Independent Researcher
-Lead Architect — TIG / SIR Frameworks
-
-Email: kai.physics@protonmail.ch
-
-Primary repositories:
-
-- Quantum_Integrity_Core
-- Structural_Integrity_Recursion
-
----
-
 # Repository Status
 
 This repository is an exploratory mathematical-physics derivation architecture.
@@ -79,3 +64,18 @@ Current repository classification:
 # License
 
 MIT License
+
+---
+
+# Maintainer
+
+Kai Stefan Dietrich
+Independent Researcher
+Lead Architect — TIG / SIR Frameworks
+
+Email: kai.physics@protonmail.ch
+
+Primary repositories:
+
+- Quantum_Integrity_Core
+- Structural_Integrity_Recursion
