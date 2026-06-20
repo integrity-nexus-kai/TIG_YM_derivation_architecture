@@ -40,22 +40,24 @@ The complete field-equation program remains under active development.
 
 ---
 
-# TIG Field Equation Program
+TIG-E Field Equation Program
 
 Status:
-
-ACTIVE DERIVATION PROGRAM
+ACTIVE RESEARCH PROGRAM
 
 Scope:
 
-- field reconstruction
-- variational formulation
-- tensor consistency
+- integrity tensor construction
+- covariant extension
 - dynamical closure
+- variational formulation
+- field equation completion
 
 Comments:
 
-No final canonical field equation is currently registered as proven.
+The TIG-E program is the active effort aimed at extending the current TIG framework toward a complete field-equation formulation.
+
+No final TIG-E field equation is currently registered as proven.
 
 ---
 
