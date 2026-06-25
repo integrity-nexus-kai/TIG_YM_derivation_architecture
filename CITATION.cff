@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "TIG_YM_derivation_architecture"
+authors:
+  - family-names: "Dietrich"
+    given-names: "Kai Stefan"
+    affiliation: "Independent Researcher"
+    email: "kai.physics@protonmail.ch"
+repository-code: "https://github.com/integrity-nexus-kai/TIG_YM_derivation_architecture"
+url: "https://github.com/integrity-nexus-kai/TIG_YM_derivation_architecture"
+abstract: "Research architecture repository for structural derivation work."
+keywords:
+  - research architecture
+  - structural derivation
+  - mathematical physics
+license: "LicenseRef-Canonical-Integrity-License-1.0"
