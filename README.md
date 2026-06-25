@@ -4,6 +4,27 @@ Theorem-oriented derivation architecture for the TIG3 operator-theoretic researc
 
 ---
 
+# License and Canonical Status
+
+This repository is governed by the **Canonical Integrity License v1.0**.
+
+See:
+
+- `LICENSE`
+- `CANONICAL_STATUS.md`
+
+Core rule:
+
+```text
+Share: yes.
+Cite: yes.
+Study: yes.
+Independent further development: yes.
+Modify or redistribute canonical TIG_YM_derivation_architecture material as canonical: no.
+```
+
+---
+
 # Repository Status
 
 This repository is an exploratory mathematical-physics derivation architecture.
@@ -61,19 +82,25 @@ Current repository classification:
 
 ---
 
-# License
+# Citation
 
-MIT License
+If referencing this repository, please cite the repository metadata defined in:
+
+`/CITATION.cff`
 
 ---
 
-# Maintainer
+# Author
 
-Kai Stefan Dietrich
-Independent Researcher
+Kai Stefan Dietrich  
+Independent Researcher  
 Lead Architect — TIG / SIR Frameworks
 
-Email: kai.physics@protonmail.ch
+Official contact:  
+kai.physics@protonmail.ch
+
+GitHub:
+https://github.com/integrity-nexus-kai
 
 Primary repositories:
 
