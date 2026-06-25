@@ -1,21 +1,90 @@
-MIT License
+# Canonical Integrity License v1.0
 
 Copyright (c) 2026 Kai Stefan Dietrich
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Repository: TIG_YM_derivation_architecture
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Purpose
+
+This license preserves the integrity of the canonical research architecture while allowing public reading, citation, sharing, and independent further development.
+
+```text
+Share: yes.
+Cite: yes.
+Study: yes.
+Build upon independently: yes.
+Modify the canonical material: no.
+Misrepresent modified material as canonical: no.
+```
+
+---
+
+## Canonical Work
+
+The canonical work is the TIG_YM_derivation_architecture repository authored by Kai Stefan Dietrich.
+
+Canonical repository:
+
+```text
+https://github.com/integrity-nexus-kai/TIG_YM_derivation_architecture
+```
+
+Only author-approved changes in the canonical repository are considered canonical material.
+
+---
+
+## Permitted Uses
+
+You may read, study, cite, link to, share unchanged copies with attribution, review, criticize, audit, and build independent work inspired by the material.
+
+Independent implementations, tools, and research programs that reference the material are allowed when clearly marked as independent and non-canonical.
+
+---
+
+## Attribution Requirement
+
+Any public use, citation, review, or reference should identify:
+
+```text
+Kai Stefan Dietrich
+TIG_YM_derivation_architecture
+https://github.com/integrity-nexus-kai/TIG_YM_derivation_architecture
+```
+
+Do not imply endorsement, co-authorship, approval, peer review, or institutional validation unless explicitly granted in writing.
+
+---
+
+## Modification Restriction
+
+You may not publish, redistribute, or present modified versions of the canonical documents, structure, governance model, object model, or research architecture as if they were the original or canonical material.
+
+Modified versions must not use the project name in a way that suggests canonical status, author approval, or continuity with the original repository.
+
+---
+
+## Independent Further Development
+
+Independent further development is allowed when it is clearly marked as independent and non-canonical.
+
+Independent derivative projects must use a clearly distinct project name, state that they are not the canonical repository, provide attribution, and avoid implying author approval.
+
+---
+
+## No Warranty
+
+The material is provided as-is, without warranty of any kind. Use of the material is at your own risk.
+
+---
+
+## Rights Reserved
+
+All rights not expressly granted in this license are reserved by Kai Stefan Dietrich.
+
+---
+
+## Legal Note
+
+This is a custom research-governance license. It is not an OSI-approved open-source license.
