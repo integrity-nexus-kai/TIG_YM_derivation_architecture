@@ -1,5 +1,7 @@
 # TIG_YM_derivation_architecture
 
+> Governance candidate: the local mapping to the draft TIG Research Governance Standard is recorded in `governance/TRGS_LOCAL_PROFILE.md`. It is not an independent proof review or an activation of the standard.
+
 Theorem-oriented derivation architecture for the TIG3 operator-theoretic research program and admissibility-preserving spectral analysis framework.
 
 ---
